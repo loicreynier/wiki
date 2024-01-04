@@ -1,2 +1,4 @@
 SteamDB
 SKSE
+veraPDF
+LuaLaTeX
