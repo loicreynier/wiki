@@ -2,3 +2,6 @@ SteamDB
 SKSE
 veraPDF
 LuaLaTeX
+dotfiles
+Dotfiles
+Dploy
