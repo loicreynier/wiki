@@ -1,6 +1,6 @@
 ---
 title: Skyrim Special Edition
-date: 2024-01-03
+date: 2024-01-05
 tags:
   - Modding
   - Skyrim
@@ -65,3 +65,32 @@ In version 1.6.1130,
 [SteamDB]: https://steamdb.info
 
 [^1]: and preferably with Steam to be directly connected to Bethesda.net
+
+## Mod installation/compatibility notes
+
+### XPMSSE
+
+Since [IED] no longer requires [XPMSSE] as a prerequisite,
+there is no need to install
+the weapon styles and accompanying scripts from XPMSSE.
+XPMSSE is now only necessary for its skeleton, which is notably used by CBBE.
+Therefore,
+it is not necessary to install the settings loader for the MCM
+and the various weapons style script fixes such as:
+
+- XP32 XPMSSE Weapon Styles Uncloaked
+- XP32 FIXES SCRIPTS
+- XP32 XPMSSE - Nemesis - Papyrus Stack Fix
+
+For an IED + SOS setup,
+it is recommended to use [XP32 Maximum Skeleton Lite],
+which streamlines XPMSSE
+to only include physics and scripts for SOS and tails.
+
+<!-- editorconfig-checker-disable -->
+
+[IED]: https://www.nexusmods.com/skyrimspecialedition/mods/62001
+[XPMSSE]: https://www.nexusmods.com/skyrimspecialedition/mods/1988
+[XP32 Maximum Skeleton Lite]: https://www.nexusmods.com/skyrimspecialedition/mods/69583
+
+<!-- editorconfig-checker-enable -->
