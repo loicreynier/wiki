@@ -59,3 +59,43 @@ even though it also failed the test.
     Wikipedia contributors,"PDF/A," Wikipedia, The Free Encyclopedia,
     <https://en.wikipedia.org/w/index.php?title=PDF/A&oldid=1172480804>
     (accessed October 9, 2023).
+
+# Graphics
+
+## Include PDF
+
+PDFs can be included in a LaTeX documents
+using the `\includepdf` command from the `pdfpages` packages:
+
+```latex
+\usepackage{pdfpages}
+\includepdf[pages={1,3-5,7},scale=0.8]{path/to/doc.pdf}
+```
+
+To include a PDF in a document page that has a section title
+such as `\section`or `\chapter`,
+one should utilize the `pagecommand` option.
+This option declares a LaTeX command
+that is executed on each page of the included PDF:
+
+```latex
+\ìncludepdf[scale=0.8,pagecommand={\section{Example}\hfill}]{path/to/doc.pdf}
+```
+
+Given that the command is executed on each page,
+if one wishes to include a multipage PDF,
+two imports are necessary:
+one with the section including only the first page of the PDF,
+and a second one without the option to include the rest of the PDF:
+
+```latex
+\ìncludepdf
+  [pages=1,scale=0.8,pagecommand={\section{Example}\hfill}]
+  {path/to/doc.pdf}
+\includepdf
+  [pages=2-,scale=0.8,pagecommand={}]{path/to/doc.pdf}
+```
+
+The empty `pagecommand={}` is employed here
+to ensure that the LaTeX header and footer (such as the page number),
+are present on the pages where the PDF is included.
