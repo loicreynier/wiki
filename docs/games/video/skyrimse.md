@@ -4,13 +4,18 @@ date: 2024-01-05
 tags:
   - Modding
   - Skyrim
+icon: material/axe-battle
 ---
 
-# Modding
+<!-- markdownlint-disable MD046 -->
 
-## Updating modded install
+# Skyrim Special Edition
 
-### Updating game files
+## Modding
+
+### Updating modded install
+
+#### Updating game files
 
 Updates can be downloaded from Steam depots using [SteamDB].
 Skyrim SE Steam app is composed of two depots:
@@ -42,11 +47,12 @@ download_depot 489830 489833 <manifest_id>
 Once downloaded,
 the update files can be copied to the (modded) game folder.
 
-> [!WARNING]
-> Root Builder cache and backups
-> must be reset when adding new files to the game folder.
+!!! warning "Root Builder"
 
-### Updating Creation Club
+    Root Builder cache and backups
+    must be reset when adding new files to the game folder.
+
+#### Updating Creation Club
 
 <!-- markdownlint-disable MD033 -->
 
@@ -58,17 +64,18 @@ in order to access the "Creations" menu in the main menu.
 In version 1.6.1130,
 <kbd>o</kbd> key allows access to an option to redownload all the Creations.
 
-> [!NOTE]
-> Outdated creations can lead to errors related to SKSE Plugins
-> in the crash loggers.
+!!! Outdated creations
+
+    Outdated creations can lead to errors related to SKSE Plugins
+    in the crash loggers.
 
 [SteamDB]: https://steamdb.info
 
 [^1]: and preferably with Steam to be directly connected to Bethesda.net
 
-## Mod installation/compatibility notes
+### Mod installation/compatibility notes
 
-### XPMSSE
+#### XPMSSE
 
 Since [IED] no longer requires [XPMSSE] as a prerequisite,
 there is no need to install

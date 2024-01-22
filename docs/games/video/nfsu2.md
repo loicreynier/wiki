@@ -1,14 +1,17 @@
 ---
-title: "Need for Speed: Underground 2"
+title: "NFS Underground 2"
 date: 2024-01-03
 tags:
   - Modding
   - "Need for Speed"
+icon: material/car-speed-limiter
 ---
 
-# Modding
+# Need for Speed Underground 2
 
-## Releases (and warez)
+## Modding
+
+### Releases (and warez)
 
 Most NFSU2 mods requires version 1.2 and vanilla release
 is preferred to be sure of the mods/patches installed.

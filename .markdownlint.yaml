@@ -1,2 +1,4 @@
-# Disable 1 level-1 header limit
+# -- Disable 1 level-1 header limit
+# Linter complains when a 1 level-1 header is present
+# while title is set in YAML metadata block.
 MD025: false

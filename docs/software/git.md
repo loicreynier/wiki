@@ -4,9 +4,14 @@ date: 2023-01-04
 tags:
   - Git
   - Code
+icon: material/git
 ---
 
-## Stage only part of a new/untracked file
+# Git
+
+## Staging
+
+### Stage only part of a new/untracked file
 
 ```shell
 git add -N <file>
@@ -15,7 +20,9 @@ git add -p <file>
 
 `git add`'s `-N` flag record only the fact that the path will be added later.
 
-## Remove obsolete tracking branches
+## Branches
+
+### Remove obsolete tracking branches
 
 After deleting a local branch with `git branch -d`
 and deleting the remote branch with `git push origin --delete`,

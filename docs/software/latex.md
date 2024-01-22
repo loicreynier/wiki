@@ -3,11 +3,15 @@ title: LaTeX
 date: 2023-09-10
 tags:
   - LaTeX
+  - PDF
+icon: material/file-document-outline
 ---
 
-# PDF Metadata
+# LaTeX
 
-## PDF/A-1b compliance
+## PDF Metadata
+
+### PDF/A-1b compliance
 
 > PDF/A is an ISO-standardized version of the Portable Document Format (PDF)
 > specialized for use in the archiving.
@@ -60,9 +64,9 @@ even though it also failed the test.
     <https://en.wikipedia.org/w/index.php?title=PDF/A&oldid=1172480804>
     (accessed October 9, 2023).
 
-# Graphics
+## Graphics
 
-## Include PDF
+### Include PDF
 
 PDFs can be included in a LaTeX documents
 using the `\includepdf` command from the `pdfpages` packages:
@@ -89,7 +93,7 @@ one with the section including only the first page of the PDF,
 and a second one without the option to include the rest of the PDF:
 
 ```latex
-\ìncludepdf
+\includepdf
   [pages=1,scale=0.8,pagecommand={\section{Example}\hfill}]
   {path/to/doc.pdf}
 \includepdf

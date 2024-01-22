@@ -4,13 +4,16 @@ date: 2023-08-13
 tags:
   - Linux
   - "Operating Systems"
+icon: material/linux
 ---
 
-# Configuration
+# Linux
 
-## Dotfiles
+## Configuration
 
-### GNU Stow and alternatives
+### Dotfiles
+
+#### GNU Stow and alternatives
 
 > GNU [Stow] is a symlink farm manager which takes distinct packages
 > of software and/or data located in separate directories on the file system,

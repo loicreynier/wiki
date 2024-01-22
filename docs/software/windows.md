@@ -5,11 +5,14 @@ tags:
   - Windows
   - "Operating Systems"
   - "Ricing"
+icon: material/microsoft-windows
 ---
 
-# Storage
+# Windows
 
-## Removing "phantom" drive letters
+## Storage
+
+### Removing "phantom" drive letters
 
 Phantom drive letters refer to drive letters
 that are assigned to non-existent
@@ -20,9 +23,9 @@ They can be removed using PowerShell as an administrator:
 mountvol <letter>: /D
 ```
 
-# Ricing
+## Ricing
 
-## Icons locations (Windows 11)
+### Icons locations (Windows 11)
 
 Most of the icons used by Windows are stored in DLL files:
 
