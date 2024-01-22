@@ -2,9 +2,7 @@
     "recommendations": [
         "editorconfig.editorconfig",
         "valentjn.vscode-ltex",
-        "bierner.markdown-checkbox",
-        "bierner.markdown-footnotes",
-        "yahyabatulu.vscode-markdown-alert",
+        "jebbs.markdown-extended",
         "eamodio.gitlens"
     ]
 }
