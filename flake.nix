@@ -37,11 +37,28 @@
             statix.enable = true;
             typos.enable = true;
           };
+
+          settings = {
+            prettier = {
+              ignore-unknown = true;
+              check = false;
+              write = true;
+              log-level = "silent";
+            };
+          };
         };
       };
 
       devShells.default = pkgs.mkShell {
         inherit (self.checks.${system}.pre-commit-check) shellHook;
+        propagatedBuildInputs = with pkgs; [
+          (python3.withPackages (ps:
+            with ps; [
+              mkdocs
+              mkdocs-material
+              pymdown-extensions
+            ]))
+        ];
       };
     });
 }
