@@ -13,6 +13,17 @@ icon: material/axe-battle
 
 ## Modding
 
+### Documentation
+
+<!-- editorconfig-checker-disable -->
+
+- [Animonculory Modding Resources](https://github.com/The-Animonculory/Modding-Resources)
+- [Learn To Mod](https://github.com/LivelyDismay/Learn-To-Mod)
+- [SKSE Plugin Status](https://modding.wiki/en/skyrim/users/skse-plugins)
+- [xEdit Documentation](https://tes5edit.github.io/docs)
+
+<!-- editorconfig-checker-enable -->
+
 ### Updating modded install
 
 #### Updating game files
@@ -64,7 +75,7 @@ in order to access the "Creations" menu in the main menu.
 In version 1.6.1130,
 <kbd>o</kbd> key allows access to an option to redownload all the Creations.
 
-!!! Outdated creations
+!!! warning "Outdated creations"
 
     Outdated creations can lead to errors related to SKSE Plugins
     in the crash loggers.
