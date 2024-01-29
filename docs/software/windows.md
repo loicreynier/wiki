@@ -1,6 +1,6 @@
 ---
 title: Windows
-date: 2024-01-04
+date: 2029-01-04
 tags:
   - Windows
   - "Operating Systems"
@@ -22,6 +22,52 @@ They can be removed using PowerShell as an administrator:
 ```powershell
 mountvol <letter>: /D
 ```
+
+## WSL
+
+### Execute command from PowerShell
+
+To execute Linux commands through WSL from PowerShell,
+one can employ the `wsl` or `bash` commands:
+
+```powershell
+wsl -d <distro> -u <user> -- <command> # Login shell
+wsl -d <distro> -u <user> --exec <command> # Standard shell
+bash -c <command> # Default user login shell
+```
+
+#### `CreateProcessEntryCommon` error
+
+!!! Tip "TLDR: use `wsl -- <command>`"
+
+As of WSL 2.0.9.0,
+the `bash` PowerShell command invokes `<command>` through a login shell
+of the default WSL distribution (`wsl --setdefault <distro>`).
+To achieve this, it:
+
+1. Determines the default user ID
+2. Looks up the user's shell in `/etc/passwd`
+3. Attempts to start the shell
+
+When the login shell is not accessible,
+[the following error is encountered](https://askubuntu.com/questions/1458921):
+
+```powershell
+<3>WSL (464) ERROR: CreateProcessEntryCommon:502: execvpe /bin/bash failed 2
+```
+
+This can especially be the case in NixOS WSL (version 23.11 at least),
+where all the NixOS-specific magic/operations
+([though subject to change in future versions][NixOSWSL_login_error])
+happens within the login shell of the root user.
+
+In the case of NixOS WSL,
+a similar error is encountered when using `wsl --exec`,
+which does not start a login shell.
+Currently,
+in this scenario, only `wsl -- <command>` works properly.
+
+[NixOSWSL_login_error]: https://github.com/nix-community/NixOS-WSL/issues/284
 
 ## Ricing
 

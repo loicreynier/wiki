@@ -28,3 +28,5 @@ FOMOD
 FOMODs
 WACCF
 orcish
+NixOS
+NixOS-specific
