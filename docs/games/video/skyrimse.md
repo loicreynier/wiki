@@ -1,6 +1,5 @@
 ---
 title: Skyrim Special Edition
-date: 2024-01-05
 tags:
   - Modding
   - Skyrim

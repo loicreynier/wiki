@@ -1,6 +1,5 @@
 ---
 title: Windows
-date: 2029-01-04
 tags:
   - Windows
   - "Operating Systems"

@@ -27,7 +27,7 @@
             "flake\.lock"
           ];
 
-          hooks = with pkgs; {
+          hooks = {
             alejandra.enable = true;
             commitizen.enable = true;
             deadnix.enable = true;
@@ -56,6 +56,7 @@
             with ps; [
               mkdocs
               mkdocs-material
+              mkdocs-git-revision-date-localized-plugin
               pymdown-extensions
             ]))
         ];

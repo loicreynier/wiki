@@ -1,6 +1,5 @@
 ---
 title: Linux
-date: 2023-08-13
 tags:
   - Linux
   - "Operating Systems"

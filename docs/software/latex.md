@@ -1,6 +1,5 @@
 ---
 title: LaTeX
-date: 2023-09-10
 tags:
   - LaTeX
   - PDF

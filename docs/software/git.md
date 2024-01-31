@@ -1,6 +1,5 @@
 ---
 title: Git
-date: 2023-01-04
 tags:
   - Git
   - Code
