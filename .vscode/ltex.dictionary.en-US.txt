@@ -30,3 +30,5 @@ WACCF
 orcish
 NixOS
 NixOS-specific
+inode
+TUIs

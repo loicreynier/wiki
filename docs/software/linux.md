@@ -6,7 +6,40 @@ tags:
 icon: material/linux
 ---
 
+<!-- markdownlint-disable MD046 -->
+
 # Linux
+
+## File manipulations
+
+### Removing files with special characters
+
+File names containing special characters might not be recognized by
+command-line completion or utilities such as `rm` or `mv` .
+Even GUIs, such as file explorers,
+and TUIs like `edir`,
+may struggle to rename or delete files with non-Unicode characters.
+
+To get around this issue,
+one may use file's index node
+([inode](https://en.wikipedia.org/wiki/Inode))
+to access the file.
+The problematic file's inode can be identified using `ls -li`,
+and subsequently,
+the file can be deleted or renamed by grabbing the file
+using the `find` command:
+
+```shell
+# Deletion
+find . -maxdepth 1 -type f -inum "<file-inode>" -delete
+# Renaming
+find . -maxdepth 1 -type f -inum "<file-inode>" -exec mv {} "<new-name>" \;
+```
+
+!!! Note "`fd` alternative"
+
+    As of version 9.0,
+    `fd` does not appear to have option to select files by inode.
 
 ## Configuration
 
