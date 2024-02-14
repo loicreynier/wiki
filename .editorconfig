@@ -9,6 +9,9 @@ max_line_length = 78
 indent_style = space
 indent_size = 4
 
+[.gitmodules]
+indent_size = tab
+
 [*.md]
 indent_size = unset
 trim_trailing_whitespace = false

@@ -1,0 +1,3 @@
+[submodule "NexusMkDocsThemes"]
+	path = assets/NexusMods.MkDocsMaterial.Themes.Next
+	url = git@github.com:Nexus-Mods/NexusMods.MkDocsMaterial.Themes.Next
