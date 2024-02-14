@@ -7,6 +7,7 @@ markdown_extensions:
   - footnotes
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tilde
 
 theme:
   name: material
