@@ -40,7 +40,7 @@ The history of modifications to the core files can be seen here:
 <https://steamdb.info/depot/489832/history>.
 
 Depots can be downloaded using the Steam console
-(`steam://open/console` or `steam.exe -console`)
+([`steam://open/console`](steam://open/console) or `steam.exe -console`)
 with
 
 ```console
@@ -57,12 +57,20 @@ download_depot 489830 489833 <manifest_id>
 ```
 
 Once downloaded,
-the update files can be copied to the (modded) game folder.
+the depot files can be combined into one folder.
+That folder can then be zipped and installed as a mod using [Root Builder].
+Doing so,
+each Skyrim version can be installed as a separated mod managed by MO2.
 
-!!! warning "Root Builder"
+Alternately,
+the updates files can be copied into the (modded) game folder.
+
+!!! Warning "Root Builder cache"
 
     Root Builder cache and backups
     must be reset when adding new files to the game folder.
+
+[Root Builder]: https://kezyma.github.io/?p=rootbuilder
 
 #### Updating Creation Club
 
