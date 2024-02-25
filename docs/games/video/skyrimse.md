@@ -28,8 +28,9 @@ icon: material/axe-battle
 #### Updating game files
 
 Updates can be downloaded from Steam depots using [SteamDB].
-Skyrim SE Steam app is composed of two depots:
+Skyrim SE Steam app is composed of three depots:
 
+- Disk: <https://steamdb.info/depot/489831>
 - Core: <https://steamdb.info/depot/489832>
 - SkyrimSE.exe: <https://steamdb.info/depot/489833>
 
@@ -50,6 +51,7 @@ Hence,
 the two depots from the Skyrim app can be downloaded with
 
 ```console
+download_depot 489830 489831 <manifest_id>
 download_depot 489830 489832 <manifest_id>
 download_depot 489830 489833 <manifest_id>
 ```
