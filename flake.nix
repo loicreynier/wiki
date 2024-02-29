@@ -59,6 +59,7 @@
               mkdocs-git-revision-date-localized-plugin
               pymdown-extensions
             ]))
+          just
         ];
       };
     });
