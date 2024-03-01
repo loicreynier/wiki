@@ -31,3 +31,16 @@ To get rid of these do
 ```shell
 git fetch --all --prune
 ```
+
+## Log
+
+### List commits since certain commit
+
+To list all commits made since a certain commit,
+use `git log <hash>..`,
+where `<hash>` represents the commit hash you want to start listing from,
+ensuring to include the two dots for correct range specification:
+
+```shell
+git log origin/main..
+```
