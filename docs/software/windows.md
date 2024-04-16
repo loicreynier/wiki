@@ -68,6 +68,35 @@ in this scenario, only `wsl -- <command>` works properly.
 
 [NixOSWSL_login_error]: https://github.com/nix-community/NixOS-WSL/issues/284
 
+## Hyper-V
+
+### Disabling/enabling Hyper-V for running a program
+
+!!! Tip "TLDR: run `bcdedit /set hypervisorlaunchtype off && shutdown /r /t 0`"
+
+Some (shady or related to virtualization) programs
+may require to disable Window's Hyper-V to be able to run.
+The quickest may to disable it is probably to run
+
+```cmd
+bcdedit /set hypervisorlaunchtype off
+```
+
+This command disables Hyper-V on (the next) boot.
+It then requires a reboot to apply the changes.
+
+The main drawback of disabling of Hyper-V is that it also disables WSL.
+However, the only programs I use that requires these adjustments are gaming-related,
+so I don't need WSL to run simultaneously (or do I?).
+To facilitate easy switching,
+I wrote a [PowerShell script][RestartToggleHyperV] that toggles `hypervisorlaunchtype`
+between `off` and `auto` based on its current value and then reboot the computer.
+To access this script quickly,
+I created a shortcut for it in the start menu,
+allowing it to be launched from PowerToys or Windows run launcher.
+
+[RestartToggleHyperV]: https://github.com/loicreynier/sandbox/blob/main/pwsh-magic/RestartToggleHyperV.ps1
+
 ## Ricing
 
 ### Icons locations (Windows 11)

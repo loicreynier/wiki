@@ -32,3 +32,4 @@ NixOS
 NixOS-specific
 inode
 TUIs
+PowerToys
