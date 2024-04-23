@@ -12,6 +12,10 @@ indent_size = 4
 [*.md]
 indent_size = unset
 trim_trailing_whitespace = false
+max_line_length = 100
 
 [*.{nix,yaml}]
+indent_size = 2
+
+[.ecrc]
 indent_size = 2
