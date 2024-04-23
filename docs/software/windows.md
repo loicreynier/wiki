@@ -22,6 +22,37 @@ They can be removed using PowerShell as an administrator:
 mountvol <letter>: /D
 ```
 
+## Clipboard
+
+### Interacting with the clipboard from the command line
+
+The only native command to interact with the clipboard is `clip.exe`
+which only provides copying through `ls | clip.exe`, see `clip.exe /?`.
+On the other side,
+PowerShell provides Cmdlets [`Get-Clipboard`][Get-Clipboard] and [`Set-Clipboard`][Set-Clipboard]
+to fully interact with the clipboard:
+
+```powershell
+ls | Out-String | Set-Clipboard
+Get-Clipboard
+```
+
+These can be used from WSL with `ls | powershell.exe Get-Clipboard`, which can be slow.
+In addition to these native tools,
+there are third-party tools available for clipboard interaction that do not require PowerShell.
+Among these, [`win32yank`][win32yank] is the fastest I have tested (blazing fast).
+However, it's important to note that while `win32yank` can be run from the WSL path,
+it operates much slower than when run from the Windows path.
+
+Another third-party tool to consider is [`wclip`][wclip] which provides a `--secret` option,
+which instructs clipboard viewers such as ClipMate and AceText not to capture the copied data
+(not tested with Windows 11 clipboard manager).
+
+[Get-Clipboard]: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-clipboard
+[Set-Clipboard]: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/Set-clipboard
+[win32yank]: https://github.com/equalsraf/win32yank
+[wclip]: https://github.com/palortoff/wclip
+
 ## WSL
 
 ### Execute command from PowerShell
