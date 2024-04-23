@@ -601,6 +601,30 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#clipboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clipboard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Clipboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interacting-with-the-clipboard-from-the-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interacting with the clipboard from the command line
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#wsl" class="md-nav__link">
     <span class="md-ellipsis">
       WSL
@@ -754,6 +778,30 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#clipboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clipboard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Clipboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interacting-with-the-clipboard-from-the-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interacting with the clipboard from the command line
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#wsl" class="md-nav__link">
     <span class="md-ellipsis">
       WSL
@@ -890,6 +938,25 @@ or disconnect drives.
 They can be removed using PowerShell as an administrator:</p>
 <div class="highlight"><pre><span></span><code><span class="n">mountvol</span> <span class="p">&lt;</span><span class="n">letter</span><span class="p">&gt;:</span> <span class="p">/</span><span class="n">D</span>
 </code></pre></div>
+<h2 id="clipboard">Clipboard</h2>
+<h3 id="interacting-with-the-clipboard-from-the-command-line">Interacting with the clipboard from the command line</h3>
+<p>The only native command to interact with the clipboard is <code>clip.exe</code>
+which only provides copying through <code>ls | clip.exe</code>, see <code>clip.exe /?</code>.
+On the other side,
+PowerShell provides Cmdlets <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-clipboard"><code>Get-Clipboard</code></a> and <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/Set-clipboard"><code>Set-Clipboard</code></a>
+to fully interact with the clipboard:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">ls </span><span class="p">|</span> <span class="nb">Out-String</span> <span class="p">|</span> <span class="nb">Set-Clipboard</span>
+<span class="nb">Get-Clipboard</span>
+</code></pre></div>
+<p>These can be used from WSL with <code>ls | powershell.exe Get-Clipboard</code>, which can be slow.
+In addition to these native tools,
+there are third-party tools available for clipboard interaction that do not require PowerShell.
+Among these, <a href="https://github.com/equalsraf/win32yank"><code>win32yank</code></a> is the fastest I have tested (blazing fast).
+However, it's important to note that while <code>win32yank</code> can be run from the WSL path,
+it operates much slower than when run from the Windows path.</p>
+<p>Another third-party tool to consider is <a href="https://github.com/palortoff/wclip"><code>wclip</code></a> which provides a <code>--secret</code> option,
+which instructs clipboard viewers such as ClipMate and AceText not to capture the copied data
+(not tested with Windows 11 clipboard manager).</p>
 <h2 id="wsl">WSL</h2>
 <h3 id="execute-command-from-powershell">Execute command from PowerShell</h3>
 <p>To execute Linux commands through WSL from PowerShell,
@@ -988,7 +1055,7 @@ allowing it to be launched from PowerToys or Windows run launcher.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-04-16T11:47:58+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-16</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-04-23T11:03:00+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-23</span>
   </span>
 
     
