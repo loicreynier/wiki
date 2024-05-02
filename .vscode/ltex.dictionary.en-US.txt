@@ -32,4 +32,10 @@ NixOS
 NixOS-specific
 inode
 TUIs
+unstaged
 PowerToys
+Cmdlets
+ClipMate
+AceText
+Strikethrough
+Scancodes
