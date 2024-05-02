@@ -12,6 +12,34 @@ icon: material/message-text
 - [Emoji Downloader](https://thatiemsz.github.io/Discord-Emoji-Downloader)
 - [RPC Maker](https://drpcm.t1c.dev)
 
+## Markdown syntax
+
+Discord supports standard Markdown syntax such as
+
+- Header : `# Header`
+- _Italics_: `*italics*` or `_italics_`
+- **Bold**: `**bold**`
+- ~~Strikethrough~~: `~~Strikethrough~~`
+- Masked links: `[This is my wiki](https://loicreynier.github.io/wiki)`
+- Quote: `> Quoted text`
+
+Additionally, custom syntaxes are provided:
+
+- Multi-line block quote:
+
+  ```text
+  >>> All the message
+  will be included in the quote.
+  ```
+
+- Spoiler tags:
+
+  ```text
+
+  @everyone please do not look at this
+  ||hidden text||
+  ```
+
 ## File sharing
 
 ### HEVC MP4 Embedding
