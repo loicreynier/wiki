@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.20">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
     
     
       
@@ -658,6 +658,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#nvidia-tools-and-container-toolkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      NVIDIA tools and Container Toolkit
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -835,6 +844,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#nvidia-tools-and-container-toolkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      NVIDIA tools and Container Toolkit
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -991,6 +1009,24 @@ a similar error is encountered when using <code>wsl --exec</code>,
 which does not start a login shell.
 Currently,
 in this scenario, only <code>wsl -- &lt;command&gt;</code> works properly.</p>
+<h3 id="nvidia-tools-and-container-toolkit">NVIDIA tools and Container Toolkit</h3>
+<div class="admonition tip">
+<p class="admonition-title">TLDR: <code>export LD_LIBRARY_PATH=/usr/lib/wsl/lib</code></p>
+</div>
+<p>NVIDIA-related tools such as <code>nvidia-smi</code> or <code>nvitop</code> expect the drivers in a standard location.
+In WSL, they are located in <code>/usr/lib/wsl/lib</code>, which should be prepended to <code>LD_LIBRARY_PATH</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/lib/wsl/lib<span class="w"> </span>nvidia-smi<span class="w"> </span>-L
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">This (surprisingly) also works on WSL NixOS</p>
+</div>
+<p>This export should also be used when setting container CDI using <code>nvidia-ctk</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/lib/wsl/lib
+nvidia-ctk<span class="w"> </span>cdi<span class="w"> </span>generate<span class="w"> </span>--output<span class="w"> </span>/etc/cdi/nvidia.yaml
+podman<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>--device<span class="o">=</span>nvidia.com/gpu<span class="o">=</span>all<span class="w"> </span>nvidia/cuda:12.4.1-devel-ubuntu22.04<span class="w"> </span>nvidia-smi<span class="w"> </span>-L
+</code></pre></div>
+<p>The drivers' path are registered in <code>nvidia.yaml</code>,
+hence the variable export is not required for running containers with <code>nvidia.com/gpu</code>.</p>
 <h2 id="hyper-v">Hyper-V</h2>
 <h3 id="disablingenabling-hyper-v-for-running-a-program">Disabling/enabling Hyper-V for running a program</h3>
 <div class="admonition tip">
@@ -1055,7 +1091,7 @@ allowing it to be launched from PowerToys or Windows run launcher.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-04-23T11:03:00+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-23</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-05-07T15:07:11+02:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-07</span>
   </span>
 
     
@@ -1114,7 +1150,7 @@ allowing it to be launched from PowerToys or Windows run launcher.</p>
     <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
       
         <script src="../../js/timeago.min.js"></script>
       
