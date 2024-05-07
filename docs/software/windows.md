@@ -99,6 +99,30 @@ in this scenario, only `wsl -- <command>` works properly.
 
 [NixOSWSL_login_error]: https://github.com/nix-community/NixOS-WSL/issues/284
 
+### NVIDIA tools and Container Toolkit
+
+!!! Tip "TLDR: `export LD_LIBRARY_PATH=/usr/lib/wsl/lib`"
+
+NVIDIA-related tools such as `nvidia-smi` or `nvitop` expect the drivers in a standard location.
+In WSL, they are located in `/usr/lib/wsl/lib`, which should be prepended to `LD_LIBRARY_PATH`:
+
+```shell
+LD_LIBRARY_PATH=/usr/lib/wsl/lib nvidia-smi -L
+```
+
+!!! Note "This (surprisingly) also works on WSL NixOS"
+
+This export should also be used when setting container CDI using `nvidia-ctk`:
+
+```shell
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib
+nvidia-ctk cdi generate --output /etc/cdi/nvidia.yaml
+podman run --rm --device=nvidia.com/gpu=all nvidia/cuda:12.4.1-devel-ubuntu22.04 nvidia-smi -L
+```
+
+The drivers' path are registered in `nvidia.yaml`,
+hence the variable export is not required for running containers with `nvidia.com/gpu`.
+
 ## Hyper-V
 
 ### Disabling/enabling Hyper-V for running a program
