@@ -7,6 +7,29 @@ icon: material/cards-playing
 
 ## Rulings
 
+### Buster Blader Swordsman vs The Ultimate Creature of Destruction
+
+[Buster Blader, the Dragon Destroyer Swordsman] imposes the following lock on Dragon monsters:
+
+> Change all Dragon monsters your opponent controls to Defense Position,
+> also Dragon monsters in your opponent's possession cannot activate their effects.
+
+In the OCG text, it states instead that
+
+> Your opponent cannot activate the effects of Dragon-type monsters.
+
+This means that the second part of the lock affects the player and not the monster.
+They cannot activate the effect of Dragon monsters.
+According to Jeri Sama,
+the consensus in TCG is that "X monster cannot activate its effects" always affect the player.
+In that way, if a Dragon monster is made unaffected by card effects
+with cards such as [The Ultimate Creature of Destruction] or Number 81,
+it would be possible to change it to Attack Position
+but not to activate its effects under the Buster lock.
+
+[Buster Blader, the Dragon Destroyer Swordsman]: https://yugipedia.com/wiki/Buster_Blader,_the_Dragon_Destroyer_Swordsman
+[The Ultimate Creature of Destruction]: https://yugipedia.com/wiki/The_Ultimate_Creature_of_Destruction
+
 ### Necrovalley and Horus monsters (inherent summons from the graveyard)
 
 While [Necrovalley] is active,
