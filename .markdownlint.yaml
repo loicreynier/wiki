@@ -7,3 +7,7 @@ MD025: false
 # -- Extend line length to 100
 MD013:
   line_length: 100
+
+# -- Allow exclamation mark in titles
+MD026:
+  punctuation: ".,;:。，；："
