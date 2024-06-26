@@ -18,7 +18,9 @@ icon: material/axe-battle
 
 - [Animonculory Modding Resources](https://github.com/The-Animonculory/Modding-Resources)
 - [Learn To Mod](https://github.com/LivelyDismay/Learn-To-Mod)
+- [MO2 Python Plugin API Documentation](https://www.modorganizer.org/python-plugins-doc/index.html)
 - [SKSE Plugin Status](https://modding.wiki/en/skyrim/users/skse-plugins)
+- [DirectX Scancodes list](https://wiki.nexusmods.com/index.php/DirectX_Scancodes_And_How_To_Use_Them)
 - [xEdit Documentation](https://tes5edit.github.io/docs)
 
 <!-- editorconfig-checker-enable -->
@@ -84,7 +86,7 @@ in order to access the "Creations" menu in the main menu.
 In version 1.6.1130,
 <kbd>o</kbd> key allows access to an option to redownload all the Creations.
 
-!!! warning "Outdated creations"
+!!! Warning "Outdated creations"
 
     Outdated creations can lead to errors related to SKSE Plugins
     in the crash loggers.
@@ -124,7 +126,7 @@ to only include physics and scripts for SOS and tails.
 
 #### Armory Retexture: Xavbio's Retextures with Believable Weapons
 
-!!! warning "This setup is still in testing"
+!!! Warning "This setup is still in testing"
 
 These are my installation notes for a setup
 using Xavbio's retextures as a core
@@ -218,3 +220,12 @@ especially in Xavbio's patches.
 Except for the armory retexture in Stalhrim,
 all other FOMOD options only offer patches for Stalhrim Refrozen.
 Therefore, the latter has been chosen.
+
+#### Book Cover Skyrim & Legacy of the Dragonborn
+
+When using the Legacy of the Dragonborn (LotD) patch,
+patches for Book Covers Skyrim (BCS) should not be installed.
+Since LotD incorporates Book Covers Skyrim,
+patches specifically for LotD should be installed instead.
+This is why XilaMonstrr's upscaled version of BCS includes a LotD patch,
+which is simply a dummy, empty ESP replacer.
