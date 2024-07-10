@@ -76,3 +76,12 @@ to activate its graveyard effect.
 [Macro Cosmos]: https://yugipedia.com/wiki/Macro_Cosmos
 [Dimension Shifter]: https://yugipedia.com/wiki/Dimension_Shifter
 [Darkwurm]: https://yugipedia.com/wiki/Supreme_King_Dragon_Darkwurm
+
+### Hieratic Seal and Spell Cards (Return Spell Card to Hand)
+
+When a Normal, Quick-Play or Ritual Spell Card, or a Normal or Counter Trap Card is activated,
+it cannot be returned from the field to the hand during
+that chain unless it has an effect that would cause it to remain on the field after activation,
+such as Swords of Revealing Light.
+
+For that reason Hieratic Seal cannot bounce Spell/Traps cards unless there are Continuous Spells.
