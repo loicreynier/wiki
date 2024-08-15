@@ -7,6 +7,25 @@ icon: material/cards-playing
 
 ## Rulings
 
+### Token rulings
+
+Tokens exist as monsters on the board and are always treated as **normal monsters**,
+even if they are given an effect.
+Precisely, some monster tokens have effects applied to them by the card that summon them,
+but these are not effects of the token themselves, so they cannot be negated by Skill Drain.
+
+Tokens can only exist on the field, and not anywhere else.
+They cannot be attached as Xyz material,
+because Xyz materials are not considered to be on the field.
+
+Tokens can only exist face-up. Thus, they cannot be targeted by, and are unaffected by,
+effects that would flip them face-down such as Book of Moon.
+Similarly, tokens cannot be banished face-down, and are unaffected by card effects that would do so.
+
+If a token would leave the field, it simply ceases to exist and is removed from game.
+This also applies to tokens that are temporarily banned,
+and such will not return to the field at the time specified by the effect.
+
 ### Buster Blader Swordsman vs The Ultimate Creature of Destruction
 
 [Buster Blader, the Dragon Destroyer Swordsman] imposes the following lock on Dragon monsters:
