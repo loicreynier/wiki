@@ -122,6 +122,27 @@ to only include physics and scripts for SOS and tails.
 [XPMSSE]: https://www.nexusmods.com/skyrimspecialedition/mods/1988
 [XP32 Maximum Skeleton Lite]: https://www.nexusmods.com/skyrimspecialedition/mods/69583
 
+#### Follower frameworks
+
+It appears there are essentially three types of followers:
+
+1. custom voice with custom framework (e.g., Inigo)
+2. custom voice with vanilla framework (e.g., IFD Lydia)
+3. vanilla voice with vanilla framework
+
+[BFF] handles followers with vanilla framework but seems to struggle with the second type.
+Some users recommend using it in combination with [Simple Outfit System] and [Settling of Squads]
+to address issues in these cases.
+
+For better compatibility,
+the best compromise seems to be using [NFF] alongside [Setting of Squads]
+for the home function of custom framework followers.
+
+[BFF]: https://www.nexusmods.com/skyrimspecialedition/mods/112076
+[NFF]: ttps://www.nexusmods.com/skyrimspecialedition/mods/55653
+[Simple Outfit System]: https://www.nexusmods.com/skyrimspecialedition/mods/48974
+[Settling of Squads]: https://www.nexusmods.com/skyrimspecialedition/mods/125471
+
 <!-- editorconfig-checker-enable -->
 
 #### Armory Retexture: Xavbio's Retextures with Believable Weapons
