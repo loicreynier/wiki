@@ -1,0 +1,1 @@
+{"rule":"BACK_COMPOUNDS","sentence":"^\\QThis change could potentially bring back flip monsters, which have all but vanished from the game.\\E$"}

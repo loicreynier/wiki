@@ -5,6 +5,75 @@ icon: material/cards-playing
 
 # Yu-Gi-Oh!
 
+## Ideas for Yu-Gi-Oh! 2.0
+
+<!--
+Formatting is a little bit weird here since Material for MkDocs
+use a syntax for description lists that is not parsed by the formatter:
+
+`Description entry`
+
+:   Descripion paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    Another description paragraph. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+    laboris nisi ut aliquip ex ea commodo consequat.
+-->
+
+Here are some ideas that I would implement if I were designing Yu-Gi-Oh!.
+
+`One normal summon per main phase`
+
+: This is undoubtedly the most ambitious idea,
+and it would require adjustments to the ban list to be properly balanced.
+However, it could significantly improve the experience of going second,
+as it would allow players to establish their board
+through problematic floodgate monsters that you need to run over
+(I'm looking at you, Apollos).
+
+`No restriction on setting monsters`
+
+: This idea comes from a suggestion from Farfa's chat during an episode of _Hearth of the Cast_.
+The concept is that setting monsters would no longer count as a Normal Summon,
+allowing players to set as many monsters as they wish or can afford to.
+This change could potentially bring back flip monsters,
+which have all but vanished from the game.
+It would also provide a defensive option for players who have been severely disrupted by hand traps
+(i.e., hand-trapped to death, gotta love that Snake-Eyes format),
+allowing them to build a wall.
+
+    However,
+    if this rule were to be implemented, cards like Ninjas and other effects that flip cards face-up
+    would need to be carefully balanced.
+    It should not be possible, or at least not easy, to flip all your set monsters on the first turn.
+
+`Old field spell rules`
+
+: I'm not a fan of the current field spell mechanics.
+In my opinion, field spells should function more like they do in the anime,
+where they create a shared playing field that affects both player equally.
+Remember the Mystic Mine format? The strategy often boiled down to "draw the out".
+Under the old field spell rules, you'd have more outs by simply replacing the field spell.
+
+    Under this ruling, field spells that allow players to add cards upon activation
+    should offer this benefit to both players.
+    For example, here's how [Primeval Planet Perlereino] could be reimagined:
+
+    > When this card is activated: _Both players_ can add 1 "Tearlaments" monster
+    or 1 "Visas Starfrost" from their Deck to their hand.
+    Fusion Monsters and "Tearlaments" monsters ~~you control~~ on the field gain 500 ATK.
+    If a "Tearlaments" monster _controlled by the turn player_ or in _their_ GY
+    is shuffled into the Deck or Extra Deck (except during the Damage Step):
+    _That player_ can target 1 card on the field; destroy it.
+    _The turn player_ can only use this effect of "Primeval Planet Perlereino" once per turn.
+    You can only activate 1 "Primeval Planet Perlereino" per turn.
+
+<!-- markdownlint-disable MD053 (cannot detect reference in indented block)-->
+
+[Primeval Planet Perlereino]: https://yugipedia.com/wiki/Primeval_Planet_Perlereino
+
+<!-- markdownlint-enable MD053 -->
+
 ## Rulings
 
 ### Token rulings

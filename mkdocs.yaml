@@ -1,3 +1,4 @@
+---
 site_name: Wiki
 repo_name: "loicreynier/wiki"
 repo_url: "https://github.com/loicreynier/wiki"
@@ -5,6 +6,7 @@ repo_url: "https://github.com/loicreynier/wiki"
 markdown_extensions:
   - admonition
   - footnotes
+  - def_list
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tilde
