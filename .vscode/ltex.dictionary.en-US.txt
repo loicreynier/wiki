@@ -52,3 +52,5 @@ Dragonborn
 LotD
 XilaMonstrr
 replacer
+Xyz
+Inigo

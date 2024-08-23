@@ -32,19 +32,18 @@
             commitizen.enable = true;
             deadnix.enable = true;
             editorconfig-checker.enable = true;
-            prettier.enable = true;
+            prettier = {
+              enable = true;
+              settings = {
+                ignore-unknown = true;
+                check = false;
+                write = true;
+                log-level = "silent";
+              };
+            };
             markdownlint.enable = true;
             statix.enable = true;
             typos.enable = true;
-          };
-
-          settings = {
-            prettier = {
-              ignore-unknown = true;
-              check = false;
-              write = true;
-              log-level = "silent";
-            };
           };
         };
       };
