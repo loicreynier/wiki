@@ -7,40 +7,30 @@ icon: material/cards-playing
 
 ## Ideas for Yu-Gi-Oh! 2.0
 
-<!--
-Formatting is a little bit weird here since Material for MkDocs
-use a syntax for description lists that is not parsed by the formatter:
-
-`Description entry`
-
-:   Descripion paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-    Another description paragraph. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-    laboris nisi ut aliquip ex ea commodo consequat.
--->
-
 Here are some ideas that I would implement if I were designing Yu-Gi-Oh!.
+
+<!-- prettier-ignore-start -->
 
 `One normal summon per main phase`
 
-: This is undoubtedly the most ambitious idea,
-and it would require adjustments to the ban list to be properly balanced.
-However, it could significantly improve the experience of going second,
-as it would allow players to establish their board
-through problematic floodgate monsters that you need to run over
-(I'm looking at you, Apollos).
+:   This is undoubtedly the most ambitious idea,
+    and it would require adjustments to the ban list to be properly balanced.
+    However, it could significantly improve the experience of going second,
+    as it would allow players to establish their board
+    through problematic floodgate monsters that you need to run over
+    (I'm looking at you, Apollos).
 
 `No restriction on setting monsters`
 
-: This idea comes from a suggestion from Farfa's chat during an episode of _Hearth of the Cast_.
-The concept is that setting monsters would no longer count as a Normal Summon,
-allowing players to set as many monsters as they wish or can afford to.
-This change could potentially bring back flip monsters,
-which have all but vanished from the game.
-It would also provide a defensive option for players who have been severely disrupted by hand traps
-(i.e., hand-trapped to death, gotta love that Snake-Eyes format),
-allowing them to build a wall.
+:   This idea comes from a suggestion from Farfa's chat during an episode of _Hearth of the Cast_.
+    The concept is that setting monsters would no longer count as a Normal Summon,
+    allowing players to set as many monsters as they wish or can afford to.
+    This change could potentially bring back flip monsters,
+    which have all but vanished from the game.
+    It would also provide a defensive option for players
+    who have been severely disrupted by hand traps
+    (i.e., hand-trapped to death, gotta love that Snake-Eyes format),
+    allowing them to build a wall.
 
     However,
     if this rule were to be implemented, cards like Ninjas and other effects that flip cards face-up
@@ -49,11 +39,11 @@ allowing them to build a wall.
 
 `Old field spell rules`
 
-: I'm not a fan of the current field spell mechanics.
-In my opinion, field spells should function more like they do in the anime,
-where they create a shared playing field that affects both player equally.
-Remember the Mystic Mine format? The strategy often boiled down to "draw the out".
-Under the old field spell rules, you'd have more outs by simply replacing the field spell.
+:   I'm not a fan of the current field spell mechanics.
+    In my opinion, field spells should function more like they do in the anime,
+    where they create a shared playing field that affects both player equally.
+    Remember the Mystic Mine format? The strategy often boiled down to "draw the out".
+    Under the old field spell rules, you'd have more outs by simply replacing the field spell.
 
     Under this ruling, field spells that allow players to add cards upon activation
     should offer this benefit to both players.
@@ -73,6 +63,7 @@ Under the old field spell rules, you'd have more outs by simply replacing the fi
 [Primeval Planet Perlereino]: https://yugipedia.com/wiki/Primeval_Planet_Perlereino
 
 <!-- markdownlint-enable MD053 -->
+<!-- prettier-ignore-end -->
 
 ## Rulings
 
