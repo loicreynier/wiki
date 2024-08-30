@@ -1,1 +1,2 @@
 {"rule":"BACK_COMPOUNDS","sentence":"^\\QThis change could potentially bring back flip monsters, which have all but vanished from the game.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qis the easy accessibility of the Extra Deck, especially for Link monsters.\\E$"}

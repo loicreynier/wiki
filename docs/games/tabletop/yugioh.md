@@ -37,6 +37,15 @@ Here are some ideas that I would implement if I were designing Yu-Gi-Oh!.
     would need to be carefully balanced.
     It should not be possible, or at least not easy, to flip all your set monsters on the first turn.
 
+    Also, if this rule were implemented, contact fusion summoning might need to be limited
+    to face-up cards for most contact fusion-summoned monsters.
+    Alba-Lenatus and other board-breaking fusion monsters could be exceptions to this rule
+
+    Regarding tribute setting, I’m not sure if it would pose a problem.
+    Most monsters only activate their effects when they are normal or special summoned,
+    and some can only be special summoned.
+    With this in mind, tribute setting might be balanced under this ruling.
+
 `Old field spell rules`
 
 :   I'm not a fan of the current field spell mechanics.
@@ -57,6 +66,17 @@ Here are some ideas that I would implement if I were designing Yu-Gi-Oh!.
     _That player_ can target 1 card on the field; destroy it.
     _The turn player_ can only use this effect of "Primeval Planet Perlereino" once per turn.
     You can only activate 1 "Primeval Planet Perlereino" per turn.
+
+`Cannot use tokens as link materials`
+
+:   One of the issues with the current state of Yu-Gi-Oh!
+    is the easy accessibility of the Extra Deck, especially for Link monsters.
+    This has contributed to the decline of Synchro monsters, which are way harder to summon.
+    One way to address this could be to prevent tokens from being used as Link material.
+    While this change might weaken the ability to continue your turn after being hit with Nibiru,
+    but it would also curb the excessive Link climbing enabled by token-generating cards.
+    By restricting tokens from being used for both Xyz and Link summons,
+    Synchro strategies might see a resurgence.
 
 <!-- markdownlint-disable MD053 (cannot detect reference in indented block)-->
 
