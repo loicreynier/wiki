@@ -25,6 +25,18 @@ icon: material/axe-battle
 
 <!-- editorconfig-checker-enable -->
 
+### Testing
+
+#### Soul absorption test
+
+To test behaviors, such as animations, during dragon soul absorption,
+one can spawn a dragon and reduce its health to zero,
+forcing it to land and trigger the absorption sequence:
+
+1. draw your weapon
+2. run `player.placeatme 1ca05` then target the dragon and run `forceav health 0`
+3. walk up to this corpse and test the sequence
+
 ### Updating modded install
 
 #### Updating game files
