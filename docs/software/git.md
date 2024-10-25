@@ -44,3 +44,51 @@ ensuring to include the two dots for correct range specification:
 ```shell
 git log origin/main..
 ```
+
+## GitHub
+
+### Edit PR as maintainer
+
+Let's say `contributor` has submitted a pull request to `project/repo`.
+They have made changes on their `feature` branch and proposed to merge this into `origin/main`.
+A maintainer can edit (i.e., pushing commits or rebasing) the pull request
+if [maintainer edits][Github_maintainer_edits] are enabled.
+
+To do that, as maintainer you must first add their fork as a remote
+
+```shell
+git remote add contributor git@github.com:contributor/repo
+```
+
+such that:
+
+```shell
+git remote -v
+origin        https://github.com/project/repo (fetch)
+origin        https://github.com/project/repo (push)
+contributor   https://github.com/contributor/repo  (fetch)
+contributor   https://github.com/contributor/repo  (push)
+```
+
+Next, pull down their list of branches with
+
+```shell
+git fetch contributor
+```
+
+and create a new branch `contributor-feature` from the branch that they have created the PR from:
+
+```shell
+git checkout -b contributor-feature contributor/feature
+```
+
+Now make any changes you need to make on this branch
+and finally push the changes back to the PR by pushing their branch
+
+```shell
+git push contributor contributor-feature:feature
+```
+
+Note that if a rebase was performed, a `push --force` is necessary.
+
+[Github_maintainer_edits]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/allowing-changes-to-a-pull-request-branch-created-from-a-fork
