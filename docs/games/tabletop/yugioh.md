@@ -184,3 +184,17 @@ that chain unless it has an effect that would cause it to remain on the field af
 such as Swords of Revealing Light.
 
 For that reason Hieratic Seal cannot bounce Spell/Traps cards unless there are Continuous Spells.
+
+### Mirrorjade vs Unaffected by activated effects
+
+[Mirrorjade]'s trigger effect states that
+
+> If this Fusion Summoned card in its owner control leaves the field because of an opponent's card:
+> You can destroy all monsters your opponent controls during the End Phase of this turn.
+
+This effect, in fact, places a lingering effect that will destroy opponent monsters
+and is applied on the end phase.
+Since it's a "lingering" effect, it does not activate during the end phase
+allowing it to destroy monsters that are unaffected by activated effects, such as Chaos Angel.
+
+[Mirrorjade]: https://yugipedia.com/wiki/Mirrorjade_the_Iceblade_Dragon
