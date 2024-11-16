@@ -198,3 +198,20 @@ Since it's a "lingering" effect, it does not activate during the end phase
 allowing it to destroy monsters that are unaffected by activated effects, such as Chaos Angel.
 
 [Mirrorjade]: https://yugipedia.com/wiki/Mirrorjade_the_Iceblade_Dragon
+
+### Soul Crossing, Monarch Stormforth & Vampire Sucker vs Unaffected monsters
+
+Cards such as [The Monarchs Stormforth] and [Vampire Sucker] that tribute opponents monsters
+to perform a tribute summon cannot out unaffected monsters as stated in [this ruling QA][qa_monarch_stormforth].
+[Soul Crossing] on the other hand, [can tribute unaffected][qa_soul_crossing] monsters because
+
+> the Tribute Summon is performed due to the effect of Soul Crossing,
+> but any monsters Tribute are not Tributes due to its effect
+
+while the other mentioned card tribute for effect.
+
+[The Monarchs Stormforth]: https://yugipedia.com/wiki/The_Monarchs_Stormforth
+[Vampire Sucker]: https://yugipedia.com/wiki/Vampire_Sucker
+[Soul Crossing]: https://yugipedia.com/wiki/Soul_Crossing
+[qa_monarch_stormforth]: https://db.ygoresources.com/qa#13201
+[qa_soul_crossing]: https://db.ygoresources.com/card#15838
