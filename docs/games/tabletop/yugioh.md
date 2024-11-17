@@ -78,9 +78,20 @@ Here are some ideas that I would implement if I were designing Yu-Gi-Oh!.
     By restricting tokens from being used for both Xyz and Link summons,
     Synchro strategies might see a resurgence.
 
+`Replace normal monsters by tokens`
+
+:   Even though Konami tries to make normal monsters relevant by releasing archetypes like [Primite]
+    or printing new support for Blue-Eyes and Dark Magician, normal monsters are outdated.
+    In my opinion, they should be phased out entirely.
+    Instead, iconic vanilla monsters could be given new exciting effects.
+    If you still want to preserve strategies involving normal monsters,
+    you could adopt an approach similar to Tony or Swordsoul,
+    using non-effect monsters and tokens instead of using dead-weight normal monsters.
+
 <!-- markdownlint-disable MD053 (cannot detect reference in indented block)-->
 
 [Primeval Planet Perlereino]: https://yugipedia.com/wiki/Primeval_Planet_Perlereino
+[Primite]: https://yugipedia.com/wiki/Primite
 
 <!-- markdownlint-enable MD053 -->
 <!-- prettier-ignore-end -->
