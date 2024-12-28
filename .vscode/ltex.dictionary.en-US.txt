@@ -64,3 +64,6 @@ Mirrorjade
 Stormforth
 Konami
 Primite
+Xtended
+ElAmigos
+Modlist
