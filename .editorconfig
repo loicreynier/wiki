@@ -19,6 +19,7 @@ max_line_length = unset
 
 [*.{nix,yaml}]
 indent_size = 2
+max_line_length = unset
 
 [.ecrc]
 indent_size = 2
