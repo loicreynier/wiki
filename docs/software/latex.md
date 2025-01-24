@@ -102,3 +102,56 @@ and a second one without the option to include the rest of the PDF:
 The empty `pagecommand={}` is employed here
 to ensure that the LaTeX header and footer (such as the page number),
 are present on the pages where the PDF is included.
+
+## Code highlighting with Minted
+
+The [`minted`](https://github.com/gpoore/minted) package provides syntax highlighting
+for code listing (and inline code) using the Pygments library.
+It requires running system command, i.e. shell escape, which can be enabled in `.latexmkrc`
+
+```perl
+$pdf_mode = 4; # LuaLaTeX
+$pdflatex = "pdflatex -shell-escape %O %S";
+$lualatex = "lualatex --shell-escape %O %S";
+$out_dir = "build";
+$quiet = 1;
+```
+
+or directly from the command line as in `lualatex --shell-escape main.tex`.
+Also, if using an alternative path for the build files (as in the above Latexmk configuration),
+Minted caching should be disabled and the path must be specified:
+
+```latex
+\usepackage[cache=false,outputdir=./build]{minted}
+```
+
+### Minted in Beamer
+
+<!-- markdownlint-disable MD046 -->
+
+!!! Warning "`minted` listings and Beamer overlays may not interact well"
+
+    Verbatim-like content conflicts with how processes overlays.
+    Consider alternatives such as using multiples frames or uncovering entier code blocks.
+
+In Beamer,
+frames containing `minted` environments must be marked as `fragile` due to verbatim-like content:
+
+```latex
+\documentclass{beamer}
+\usepackage{minted}
+\begin{document}
+  \begin{frame}[fragile]{Minted example}
+    \begin{minted}[fontsize=\scriptsize, linenos]{cuda}
+    __global__ void cudaHello(){
+      printf("Hello World from GPU!\n");
+    }
+
+    int main() {
+      cudaHello<<<1,1>>>();
+      return 0;
+    }
+    \end{minted}
+  \end{frame}
+\end{document}
+```

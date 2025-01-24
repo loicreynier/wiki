@@ -68,3 +68,5 @@ Xtended
 ElAmigos
 Modlist
 AMGX
+Pygments
+Latexmk

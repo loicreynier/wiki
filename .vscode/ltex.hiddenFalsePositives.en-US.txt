@@ -4,3 +4,4 @@
 {"rule":"PCT_SINGULAR_NOUN_PLURAL_VERB_AGREEMENT","sentence":"^\\Qthe Tribute Summon is performed due to the effect of Soul Crossing, but any monsters Tribute are not Tributes due to its effect\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIf you still want to preserve strategies involving normal monsters, you could adopt an approach similar to Tony or Swordsoul,\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIf you still want to preserve strategies involving normal monsters, you could adopt an approach similar to Tony or Swordsoul, using non-effect monsters and tokens instead of using dead-weight normal monsters.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qor directly from the command line as in \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
