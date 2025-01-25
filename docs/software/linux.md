@@ -41,6 +41,26 @@ find . -maxdepth 1 -type f -inum "<file-inode>" -exec mv {} "<new-name>" \;
     As of version 9.0,
     `fd` does not appear to have option to select files by inode.
 
+## Shell
+
+### Shell commands invisible after ++ctrl+c++
+
+!!! Tip "TLDR"
+
+    Use `reset` or `tset` commands.
+
+When interrupting ++ctrl+c++ or suspending ++ctrl+z++ TUI applications,
+subsequent commands in the Bash shell may not be visible.
+
+This occurs because
+TUI applications often disable terminal echoing and buffering to control their display.
+If interrupted or suspended, these applications may not have the chance to reset terminal settings,
+leading to this issue.
+
+To resolve this,
+use the `reset` or `tset` commands to restore the terminal to its standard settings,
+re-enabling local echo and resolving the visibility problem for subsequent commands.
+
 ## Configuration
 
 ### Dotfiles

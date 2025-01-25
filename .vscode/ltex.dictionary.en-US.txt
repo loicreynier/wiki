@@ -70,3 +70,4 @@ Modlist
 AMGX
 Pygments
 Latexmk
+ctrl

@@ -5,3 +5,4 @@
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIf you still want to preserve strategies involving normal monsters, you could adopt an approach similar to Tony or Swordsoul,\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIf you still want to preserve strategies involving normal monsters, you could adopt an approach similar to Tony or Swordsoul, using non-effect monsters and tokens instead of using dead-weight normal monsters.\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qor directly from the command line as in \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"CHANCE_CHANGE","sentence":"^\\QIf interrupted or suspended, these applications may not have the chance to reset terminal settings, leading to this issue.\\E$"}
