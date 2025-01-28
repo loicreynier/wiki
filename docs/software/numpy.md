@@ -16,11 +16,12 @@ The `.mtx` file need to be edited, leaving only the matrix and keeping the full 
 then it can be loaded using:
 
 ```python
+import sys
 from scipy.io import mmread
 import numpy as np
 
 mtx = mmread("AMGX_matrix.mtx")    # Read data
 mtx.toarray()                      # Convert to dense matrix
-np.set_printoptions(linewidth=100)
+np.set_printoptions(linewidth=100, threshold=sys.maxsize)
 print(mtx)
 ```
