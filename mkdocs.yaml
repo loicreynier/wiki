@@ -9,6 +9,11 @@ markdown_extensions:
   - def_list
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.tilde
 
 theme:
@@ -28,6 +33,8 @@ theme:
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
+  features:
+    - content.tabs.link
 
 plugins:
   - tags
