@@ -67,13 +67,15 @@ re-enabling local echo and resolving the visibility problem for subsequent comma
 
 #### GNU Stow and alternatives
 
-> GNU [Stow] is a symlink farm manager which takes distinct packages
-> of software and/or data located in separate directories on the file system,
-> and makes them appear to be installed in the same place.
-> For example, `/usr/local/bin` could contain symlinks to files
-> within `/usr/local/stow/emacs/bin`, `/usr/local/stow/perl/bin` etc.,
-> and likewise recursively for any other subdirectories such as
-> `.../share`, `.../man`, and so on.
+!!! Quote "GNU Stow"
+
+    GNU [Stow] is a symlink farm manager which takes distinct packages
+    of software and/or data located in separate directories on the file system,
+    and makes them appear to be installed in the same place.
+    For example, `/usr/local/bin` could contain symlinks to files
+    within `/usr/local/stow/emacs/bin`, `/usr/local/stow/perl/bin` etc.,
+    and likewise recursively for any other subdirectories such as
+    `.../share`, `.../man`, and so on.
 
 Stow is a free and open-source software written in Perl.
 It is mainly used to manage the installation of software packages
@@ -109,6 +111,8 @@ one can turn to alternatives:
 - There are also implementations of Stow written in Rust,
   such as [`new-stow`](https://github.com/adam-gaia/new-stow)
   or [`rstow`](https://github.com/qboileau/rstow).
+
+<!-- markdownlint-disable MD053 -->
 
 [Stow]: https://www.gnu.org/software/stow/
 [Dploy]: https://github.com/arecarn/dploy
