@@ -19,6 +19,20 @@ git add -p <file>
 
 `git add`'s `-N` flag record only the fact that the path will be added later.
 
+## Stash
+
+### Checking out a single file from the stash
+
+```shell
+git checkout stash@{0} -- <file>
+```
+
+Alternatively one can create a copy of a stashed file using `git show`:
+
+```shell
+git show stash@{0}:<stashed-file> > <file>
+```
+
 ## Branches
 
 ### Remove obsolete tracking branches
