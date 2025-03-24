@@ -134,7 +134,7 @@ to only include physics and scripts for SOS and tails.
 [XPMSSE]: https://www.nexusmods.com/skyrimspecialedition/mods/1988
 [XP32 Maximum Skeleton Lite]: https://www.nexusmods.com/skyrimspecialedition/mods/69583
 
-### OBody configuration
+#### OBody configuration
 
 Configuring [OBody] requires editing the `OBody_presetDistributionConfig.json` configuration file.
 A common approach is to use the [ORefit JSON Master List] as a base with modifications.
