@@ -134,6 +134,26 @@ to only include physics and scripts for SOS and tails.
 [XPMSSE]: https://www.nexusmods.com/skyrimspecialedition/mods/1988
 [XP32 Maximum Skeleton Lite]: https://www.nexusmods.com/skyrimspecialedition/mods/69583
 
+### OBody configuration
+
+Configuring [OBody] requires editing the `OBody_presetDistributionConfig.json` configuration file.
+A common approach is to use the [ORefit JSON Master List] as a base with modifications.
+To prevent manually combining those files, one may want to use a tool to automate the task.
+I tried two different solutions:
+
+- the [Synthesis merger](https://github.com/audriuska12/OBodyMerger)
+- the [MO2 plugin merger](https://www.nexusmods.com/skyrimspecialedition/mods/133626)
+
+The Synthesis patcher provides more features,
+however it requires changing the structure of the original mods by moving
+the configuration file to `OBodyTemplate/OBody_presetDistributionConfig_<index>.json`
+This is due to how Synthesis works
+using the VFS and therefore having access to only one file with the same name.
+For this reason I prefer working with the MO2 plugin instead.
+
+[OBody]: https://www.nexusmods.com/skyrimspecialedition/mods/77016
+[ORefit JSON Master List]: https://www.nexusmods.com/skyrimspecialedition/mods/105052
+
 #### Follower frameworks
 
 It appears there are essentially three types of followers:

@@ -71,3 +71,6 @@ AMGX
 Pygments
 Latexmk
 ctrl
+OBody
+ORefit
+patcher
