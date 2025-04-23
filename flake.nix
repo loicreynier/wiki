@@ -59,11 +59,7 @@
               ps: with ps; [
                 mkdocs
                 mkdocs-material
-                (mkdocs-git-revision-date-localized-plugin.overridePythonAttrs (old: {
-                  pyproject = true;
-                  format = null;
-                  dependencies = old.propagatedBuildInputs ++ [ setuptools-scm ];
-                }))
+                mkdocs-git-revision-date-localized-plugin
               ]
             ))
             just
