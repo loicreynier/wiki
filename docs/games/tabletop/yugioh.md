@@ -226,3 +226,28 @@ while the other mentioned card tribute for effect.
 [Soul Crossing]: https://yugipedia.com/wiki/Soul_Crossing
 [qa_monarch_stormforth]: https://db.ygoresources.com/qa#13201
 [qa_soul_crossing]: https://db.ygoresources.com/card#15838
+
+### Hallowed Azamina shenanigans
+
+Once a Spell or Trap Card's activation has been negated, it is no longer considered to be on the field.
+Therefore it cannot be sent as a cost to the GY for the rest of the chain.
+Hence, if [The Hallowed Azamina] is activated,
+and then [WANTED: Seeker of Sinful Spoils] is activated on the same chain,
+but the opponent chain the effect of [Ghost Belle & Haunted Mansion] to negated WANTED,
+the latter cannot be chosen as a card to send to the GY when resolving The Hallowed Azamina.
+Furthermore,
+if there are no other "Sinful Spoils" cards in hand or field when The Hallowed Azamina resolves,
+its effect is not applied.
+
+If [Sinful Spoils of Slumber - Morrian] has used its effect to set to the field,
+it will be banished next time it leaves the field.
+If chosen to be sent by The Hallowed Azamina for the Fusion Summon of a level 6 Azamina Monster,
+if will be banished and the summon won't happen.
+However, if chosen with another card for the Fusion Summon of a level 8 (or higher) Azamina Monster,
+it will be banished but the summon still resolves
+since Hallowed only needs to send at least one card to grave for the summon to be successful.
+
+[The Hallowed Azamina]: https://yugipedia.com/wiki/The_Hallowed_Azamina
+[WANTED: Seeker of Sinful Spoils]: https://yugipedia.com/wiki/WANTED:_Seeker_of_Sinful_Spoils
+[Ghost Belle & Haunted Mansion]: https://yugipedia.com/wiki/Ghost_Belle_%26_Haunted_Mansion
+[Sinful Spoils of Slumber - Morrian]: https://yugipedia.com/wiki/Sinful_Spoils_of_Slumber_-_Morrian
