@@ -16,6 +16,8 @@ and deployed with GitHub Actions.
   to automate static site generation.
 - [GitHub Pages]
   to host the site directly from the GitHub repository.
+- [Pictogrammers]
+  library to find codes for Material icons.
 
 ### Inspiration
 
@@ -29,3 +31,4 @@ and deployed with GitHub Actions.
 [Material for MkDocs]: https://squidfunk.github.io/mkdocs-material
 [GitHub Actions]: https://docs.github.com/en/actions
 [GitHub Pages]: https://pages.github.com/
+[Pictogrammers]: https://pictogrammers.com/library/mdi
